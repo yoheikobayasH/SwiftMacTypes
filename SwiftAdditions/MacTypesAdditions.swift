@@ -18,10 +18,10 @@ import FoundationAdditions
 
 
 /// Converts an `OSType` to a `String` value. May return `nil`.
-/// - parameter theType: The `OSType` to convert to a string representation.
+/// - parametepe` to convert to a string representation.
 /// - returns: A string representation of `theType`, or `nil` if it can't be converted.
 public func OSTypeToString(_ theType: OSType) -> String? {
-	func OSType2Ptr(type: OSType) -> [UInt8] {
+	funcOSType) -> [UInt8] {
 		var ourOSType = [UInt8](repeating: 0, count: 4)
 		var intType = type.bigEndian
 		memcpy(&ourOSType, &intType, 4)
